@@ -1,0 +1,2 @@
+2. Ejercicio utilizando la función forEach
+Crea una lista de tareas, a partir de un array que contenga el título y el estado (completado o no) y muéstralos en un archivo HTML. Puedes utilizar un input de tipo checkbox para indicar el estado de la tarea. 
