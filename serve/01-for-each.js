@@ -1,8 +1,17 @@
 const letters = ['a', 'b' , 'c'];
 
-for (let index = 0; index < letters.length; index++) {
-    const element = letters[index];
-    console.log('for' , element);
-}
 
-letters.forEach(item => console.log('foreach' ,item))
+const cont = document.getElementById('app2');
+
+
+letters.forEach(letter => {
+    cont.innerHTML += 
+    `
+        <li>${letter}</li>
+    `;
+
+    // cont.innerText +=  " " + letter ;
+});
+
+
+

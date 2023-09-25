@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div id="app"></div>
+    <h1>forEach</h1>
+    <p>Recorrer Arrays</p>
+    <p>arrayS.forEach(array => {})</p>
+    <p>Traer en HTML con:</p>
+    <ul>
+        <li>innerHTML</li>
+        <li>innerText</li>
+    </ul>
+
+    <div id="app">
+        <h3>Productos</h3>
+        <p>
+            Un array con 2 objetos con las propiedades title y price
+        </p>
+        <br>
+    </div>
+
+    <div id="app2">
+        <h3>Letras</h3>
+        <p>
+            Un array con letras = a , b y c
+        </p>
+        <br>
+    </div>
+    <script src="../serve/01-for-each.js"></script>
     <script>
         const products = [
-            {title: 'Burger' , price: 121},
-            {title: 'Pizza' , price: 20}
+            { title: 'Burger', price: 121 },
+            { title: 'Pizza', price: 20 }
         ];
 
         const app = document.getElementById('app');
-        products.forEach(product =>{
-            app.innerHTML += `<li>${product.title}</li>`;
+        products.forEach(product => {
+            app.innerHTML +=
+                `
+                <li>${product.title} : ${product.price}</li>
+            `;
         })
     </script>
 </body>
+
 </html>
